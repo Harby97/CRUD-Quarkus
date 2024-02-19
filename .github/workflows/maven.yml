@@ -31,3 +31,6 @@ jobs:
       run: cd crud
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+    - name: Ejecutar las pruebas unitarias
+      run: mvn test
