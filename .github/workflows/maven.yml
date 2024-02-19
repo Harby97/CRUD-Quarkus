@@ -27,6 +27,8 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
+    - name: Change to CRUD directory
+      run: cd crud
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
